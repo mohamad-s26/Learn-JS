@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      // because script code before h1 element and cannot read it 
+    document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      // It is work 
+    window.onload = function () {
+        document.getElementById("el").style.color = "red";
+    };
+    </script>
+</head>
+<body>
+    
+
+
+    <script src="asign1.js"></script>
+    <script>
+      // Code Three
+      // It is work 
+    document.getElementById("el").style.color = "red";
+    </script>
+</body>
+</html>
